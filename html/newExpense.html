@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new Expense</title>
+    <style>
+        #cont{
+            background-color: cornsilk;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 5px 5px 5px purple;
+            padding: 30px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input{
+            display: block;
+            padding: 5px;
+            color: purple;
+            font-weight: bold;
+            width: 90%;
+            outline: none;
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border: 2px solid purple;
+            color: black;
+            font-weight: bold;
+            border-radius: 5%;
+            cursor: pointer;
+            margin-left: 2%;
+            box-shadow: 2px 2px 2px purple;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover{
+            transform: scale(1.01);
+            background-color: purple;
+            color: white;
+            box-shadow: 4px 4px 4px purple;
+        }    
+            </style>
+</head>
+<body>
+    <div id="cont">
+        <form action="/api/newExpense" method="post">
+            <label for="expense">Input Expense Details</label>
+            <input type="text" name="expense" id="expense">
+            <label for="expenseAmount">Input Expense Amount</label>
+            <input type="text" name="expenseAmount" id="expenseAmount">
+            <label for="category">Input Category</label>
+             <select name="category" id="category">
+                <option value="Groceries">Groceries</option>
+                <option value="Leisure">Leisure</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Health">Health</option>
+                <option value="Others">Others</option>
+             </select>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+</body>
+</html>

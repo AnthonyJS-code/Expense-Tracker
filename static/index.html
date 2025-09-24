@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <input type="button" value="LogOut" id="logout">
+        <h2>Expense Tracker</h2>
+        <input type="button" value="Add New Expense" id="newExpense">
+        <br><br>
+        <input type="button" value="filter?" id="filtin">
+        <div id="filter">
+            <span class="spanfilt">Groceries</span>
+            <span class="spanfilt">Leisure</span>
+            <span class="spanfilt">Electronics</span>
+            <span class="spanfilt">Utilities</span>
+            <span class="spanfilt">Clothing</span>
+            <span class="spanfilt">Health</span>
+            <span class="spanfilt">Others</span>
+        </div>
+        <div id="allexpenses">
+            <h3>Your Expense</h3>
+            <span id="D">Details</span>
+            <span id="C">Category</span>
+            <span id="A">Amount</span>
+        </div>
+        <div id="totald">
+            <h4>Total: </h4>
+            <span id="total"></span>
+        </div>
+        <div id="warning">
+            <h4>Are you Sure?</h4>
+            <input type="button" value="Yes, Go on" class="yes" id="">
+            <input type="button" value="No" class="yes">
+        </div>
+    </div>
+    <div id="cor">
+        <form action="/api/updateExpense" method="post">
+            <label for="expense">Input Expense Details</label>
+            <input type="text" name="expense" id="expense">
+            <label for="expenseAmount">Input Expense Amount</label>
+            <input type="text" name="expenseAmount" id="expenseAmount">
+            <label for="category">Input Category</label>
+            <input type="text" name="category" id="category">
+            <input type="text" name="id" id="id" readonly>
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

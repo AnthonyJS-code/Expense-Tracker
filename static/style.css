@@ -1,0 +1,237 @@
+#container {
+    background-color: cornsilk;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px purple;
+    padding: 10px;
+    min-width: 300px;
+}
+
+h2,
+h3 {
+    display: flex;
+    justify-content: center;
+}
+#filter{
+    padding: 10px;
+    display: none;
+}
+#filtin{
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    background-color: purple;
+    box-shadow: 3px 3px 3px purple;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#filtin:hover{
+    box-shadow: 5px 5px 5px purple;
+    transform: scale(1.1);
+}
+.spanfilt{
+    margin-left: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#logout{
+    background-color: purple;
+    padding: 10px;
+    margin-left: 75%;
+    background-color: purple;
+    box-shadow: 3px 3px 3px purple;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+#logout:hover{
+    box-shadow: 5px 5px 5px purple;
+    transform: scale(1.1);
+}
+
+#newExpense {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid purple;
+    color: black;
+    font-weight: bold;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-left: 29%;
+    box-shadow: 2px 2px 2px purple;
+}
+
+#newExpense:hover {
+    transform: scale(1.1);
+    background-color: purple;
+    color: white;
+    box-shadow: 4px 4px 4px purple;
+}
+
+#newExpense:active {
+    transform: scale(1.15);
+    box-shadow: 2px 2px 2px purple;
+}
+
+.expense {
+    border: 2px solid purple;
+    padding: 10px;
+    box-shadow: 3px 3px 3px purple;
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.expense:hover {
+    box-shadow: 4px 4px 4px purple;
+    transform: scale(1.01);
+}
+
+.a {
+    position: absolute;
+    left: 80%;
+}
+
+.u {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+.c {
+    position: absolute;
+    right: 10%;
+    top: 60%;
+}
+
+.c:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
+.u:hover {
+    color: purple;
+    transform: scale(1.1);
+}
+
+#totald {
+    position: relative;
+}
+
+#total {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.ca {
+    position: absolute;
+    left: 43%;
+}
+
+#D {
+    margin-left: 8px;
+}
+
+#C {
+    margin-left: 55px;
+}
+
+#A {
+    margin-left: 50px;
+}
+
+#cor {
+    background-color: cornsilk;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px purple;
+    padding: 10px;
+    min-width: 300px;
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#expense,#category,#expenseAmount,#id{
+    display: block;
+    padding: 5px;
+    color: purple;
+    font-weight: bold;
+    width: 90%;
+    outline: none;
+}
+
+#id{
+    margin-top: 10px;
+    display: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid purple;
+    color: black;
+    font-weight: bold;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-left: 2%;
+    box-shadow: 2px 2px 2px purple;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.01);
+    background-color: purple;
+    color: white;
+    box-shadow: 4px 4px 4px purple;
+}
+
+#warning{
+    box-shadow: 3px 3px 3px purple;
+    position: absolute;
+    margin-left: 100%; 
+    margin-top: -80%;
+    padding: 10px;
+    background-color: cornsilk;
+    display: none;
+}.yes{
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px purple;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.yes:hover{
+    box-shadow: 3px 3px 3px purple;
+    transform: scale(1.01);
+}
+select{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+h4{
+    cursor: pointer;
+}
+#filter{
+    box-shadow: 3px 3px 3px purple;
+    
+}

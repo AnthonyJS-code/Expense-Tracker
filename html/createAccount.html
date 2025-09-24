@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        #container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 5px 5px 5px purple;
+            background-color:cornsilk;
+            padding:20px;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        label{
+            display: block;
+            margin: 5px 0;
+        }
+        input{
+            width: 90%;
+            padding: 10px;
+            border: 1px solid purple;
+            outline: none;
+        }
+        #submit{
+            margin-top: 10px;
+            margin-left: 5%;
+            cursor: pointer;
+            background-color: purple;
+            color: black;
+            font-weight: bold;
+        }
+        #submit:hover{
+            background-color: transparent;
+            border: 2px solid purple;
+            color: purple;
+            transform: scale(1.01);
+        }
+        h3{
+            display: flex;
+            justify-content: center;  
+            cursor: pointer;
+        }
+        h3:hover{
+            text-decoration: underline;
+            transform: scale(1.1);
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Create Your Account. </h2>
+        <form action="/api/create-account" method="post">
+        <label for="email">Input your email</label>
+        <input type="email" name="email" required id="email">
+        <label for="password">Create Password</label>
+        <input type="password" minlength="8" required name="password" id="password">
+        <input type="submit" value="Create Account" id="submit">
+        </form>
+        <h3 id="login">Login Account?</h3>
+    </div>
+</body>
+    <script>
+        const login = document.getElementById("login")
+        login.addEventListener("click",async()=>{
+            data = await fetch("http://localhost:3000/api/login")
+            location.href = data.url
+        })
+    </script>
+</html>
