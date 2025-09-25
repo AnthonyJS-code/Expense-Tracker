@@ -71,7 +71,7 @@
 <script>
     const Create = document.getElementById("create")
     Create.addEventListener("click",async()=>{
-        data = await fetch("http://localhost:3000/api/create-account")
+        data = await fetch("/api/create-account")
         location.href = data.url
     })
 </script>

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded",async ()=>{
 })
 
 newExpense.addEventListener("click",async ()=>{
-    res = await fetch("http://localhost:3000/api/newExpense")
+    res = await fetch("/api/newExpense")
     window.location.href = res.url
 })
 
@@ -31,7 +31,7 @@ filtin.addEventListener("click",()=>{
 
 
 async function fetchAndDisplay(){
-    data = await fetch("http://localhost:3000/api/allExpenses")
+    data = await fetch("/api/allExpenses")
     ct = data.headers.get("Content-Type")
     if(ct === "text/html; charset=utf-8"){
         window.location.href = data.url
@@ -104,7 +104,7 @@ allExpenses.addEventListener("click",(e)=>{
 
 yesBtn[0].addEventListener("click",async()=>{
     id = yesBtn[0].id
-    data  = await fetch(`http://localhost:3000/api/deleteExpense/${id}`,{
+    data  = await fetch(`/api/deleteExpense/${id}`,{
         method:"DELETE",
         headers:{
             "Content-Type":"application/json"
@@ -118,7 +118,7 @@ yesBtn[1].addEventListener('click',()=>{
 
 
 logOut.addEventListener("click",async()=>{
-    data = await fetch("http://localhost:3000/api/logout",{
+    data = await fetch("/api/logout",{
         method:"POST"
     })
     location.href = data.url
