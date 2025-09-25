@@ -1,8 +1,8 @@
 {
   "name": "expense-tracker",
   "version": "1.0.0",
-  "description": "",
-  "main": "db.js",
+  "description": "A simple Expense Tracker",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -12,13 +12,23 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "connect-redis": "^9.0.0",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "express-session": "^1.18.2",
     "mongoose": "^8.18.2",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
+    "redis": "^5.8.2",
     "validator": "^13.15.15"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyJS-code/Expense-Tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnthonyJS-code/Expense-Tracker/issues"
+  },
+  "homepage": "https://github.com/AnthonyJS-code/Expense-Tracker#readme"
 }
