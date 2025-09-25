@@ -10,7 +10,7 @@ module.exports = new localStrategy(
   },
   async (email, password, done) => {
     try {
-      result = await validator.isEmail(email);
+      result = validator.isEmail(email);
       if (result) {
         const user = await users.findOne({ email: email });
         if (!user) {

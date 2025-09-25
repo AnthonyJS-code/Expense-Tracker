@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
           password: passwordHash,
         });
         await user.save();
-        res.redirect("/");
+        res.redirect("/api/login");
       }
     } else {
       res.redirect("/api/create-account");

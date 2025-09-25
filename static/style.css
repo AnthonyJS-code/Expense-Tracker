@@ -202,7 +202,7 @@ input[type="submit"]:hover {
 #warning{
     box-shadow: 3px 3px 3px purple;
     position: absolute;
-    margin-left: 100%; 
+    margin-left: 40%; 
     margin-top: -80%;
     padding: 10px;
     background-color: cornsilk;
