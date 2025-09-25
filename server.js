@@ -40,7 +40,7 @@ passport.serializeUser((user, done) => {
     done(null, user.email);
   }
 });
-
+app.set("trust proxy", 1)
 passport.deserializeUser(async (email, done) => {
   try {
     const user = await users.findOne({ email: email });
